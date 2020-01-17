@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">My AssignmentID</string>
+    <string name="app_name">Assignment</string>
+    <string name="netork_error">Network connectivity</string>
+    <string name="netork_error_message">Please do check newtork and try again</string>
+    <string name="data_unavailable">Please do check after some time</string>
+    <string name="data_error">api error</string>
 </resources>

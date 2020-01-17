@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parentPanel" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/padding_value"
+        android:elevation="15dp"
+        android:padding="@dimen/card_view_margin"
+        card_view:cardBackgroundColor="@color/colorGray"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_value">
+
+            <TextView
+                android:id="@+id/mTextViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_large"
+                android:layout_margin="@dimen/padding_value" />
+
+            <TextView
+                android:id="@+id/mTextViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_medium"
+                android:layout_below="@id/mTextViewTitle"
+                android:layout_margin="@dimen/padding_value"
+                android:layout_toLeftOf="@id/mImageView" />
+
+            <ImageView
+                android:id="@+id/mImageView"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_below="@+id/mTextViewTitle"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/padding_value" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
